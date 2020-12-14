@@ -21,9 +21,9 @@ public class TestXml {
 		for (Pays pays : listepays) {
 
 			System.out.println("Nom pays : " + pays.getNom());
-			System.out.println(pays.getDonnee_demographiques());
-			System.out.println("Donnes démographiuqes : " + pays.getDonnee_demographiques().getFecondites() + " et ensuite la population " + pays.getDonnee_demographiques().getPopulation());
-			System.out.println("Donnes economiques : " + pays.getDonnee_economiques().getMonnaie() + " et le pib de ce pays est  " + pays.getDonnee_economiques().getPib());
+			System.out.println("la date est le : " + pays.getDate_de_releve());
+			System.out.println("Donnes démographiques, la fecondite est de " + pays.getDonnee_demographiques().getFecondites() + " et ensuite la population  est de " + pays.getDonnee_demographiques().getPopulation());
+			System.out.println("Donnes economiques, la monnaie du pays est le : " + pays.getDonnee_economiques().getMonnaie() + " et le pib de ce pays est de " + pays.getDonnee_economiques().getPib());
 			
 		}
 

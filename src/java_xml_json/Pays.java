@@ -1,9 +1,12 @@
 package java_xml_json;
 
+import java.time.LocalDate;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "pays")
@@ -13,10 +16,13 @@ public class Pays {
 	protected String nom;
 
 	@XmlElement
-	protected String date_de_releve;
-	@XmlElement(name="donnees_demographiques")
+	@XmlJavaTypeAdapter(DateAdapter.class)
+	protected LocalDate date_de_releve;
+
+	@XmlElement(name = "donnees_demographiques")
 	protected DonneeDemographiques donnee_demographiques;
-	@XmlElement(name="donnees_economiques")
+
+	@XmlElement(name = "donnees_economiques")
 	protected DonneeEconomiques donnee_economiques;
 
 	public String getNom() {
@@ -27,15 +33,14 @@ public class Pays {
 		this.nom = nom;
 	}
 
-	public String getDate_de_releve() {
+	public LocalDate getDate_de_releve() {
 		return date_de_releve;
 	}
 
-	public void setDate_de_releve(String date_de_releve) {
+	public void setDate_de_releve(LocalDate date_de_releve) {
 		this.date_de_releve = date_de_releve;
 	}
 
-	
 	public DonneeDemographiques getDonnee_demographiques() {
 		return donnee_demographiques;
 	}

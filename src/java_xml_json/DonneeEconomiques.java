@@ -13,6 +13,7 @@ public class DonneeEconomiques {
 
 	@XmlElement
 	protected int pib;
+	
 	@XmlElement
 	protected String monnaie;
 
