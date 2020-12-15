@@ -8,6 +8,7 @@
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
+
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
@@ -15,10 +16,35 @@
 					<release>13</release>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>2.5.0</version>
+				<executions>
+					<execution>
+						<id>xjc-schema1</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<locale>en</locale>
+					<sources>
+						<source>C:/Users/tarbo/Desktop/TP_xsd.xsd</source>
+					</sources>
+					<clearOutputDir>false</clearOutputDir>
+					<packageName>fr.diginamic.schema</packageName>
+					<encoding>${file.encoding}</encoding>
+				</configuration>
+			</plugin>
 		</plugins>
 
 
 	</build>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
@@ -35,6 +61,6 @@
 			<artifactId>jaxb-runtime</artifactId>
 			<version>2.3.1</version>
 		</dependency>
-		</dependencies>
+	</dependencies>
 </project>
 

@@ -1,4 +1,4 @@
-package java_xml_json;
+package old;
 
 import java.time.LocalDate;
 
@@ -24,6 +24,16 @@ public class Pays {
 
 	@XmlElement(name = "donnees_economiques")
 	protected DonneeEconomiques donnee_economiques;
+
+	public Pays(String nom) {
+		super();
+		this.nom = nom;
+	}
+
+	public Pays() {
+		super();
+		
+	}
 
 	public String getNom() {
 		return nom;
