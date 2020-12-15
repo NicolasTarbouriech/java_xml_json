@@ -1,12 +1,22 @@
 package json;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ChiffreDaffaires {
-
+	@JsonProperty("annee")
 	protected Integer annee;
-	
+	@JsonProperty("valeur")
 	protected Double valeur;
+
+	public ChiffreDaffaires(Integer annee, Double valeur) {
+		super();
+		this.annee = annee;
+		this.valeur = valeur;
+	}
+
+	public ChiffreDaffaires() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public Integer getAnnee() {
 		return annee;
@@ -24,7 +34,4 @@ public class ChiffreDaffaires {
 		this.valeur = valeur;
 	}
 
-	
-	
-	
 }
