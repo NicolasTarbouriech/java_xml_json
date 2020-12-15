@@ -1,0 +1,77 @@
+[
+	{
+		"nom": "google",
+		"siegeSocial": [
+			"googlepex",
+			"Mountain View",
+			"California",
+			"United States"
+		],
+		"fondateur": [
+			{
+				"nom": "Larry Page",
+				"date_naissance": "26/03/1973",
+				"lieu": "east lansing",
+				"pays": "michigan"
+			},
+			{
+				"nom": "Sergey Brin",
+				"date_naissance": "21/08/1973",
+				"lieu": "moscou",
+				"pays": "Union Soviétique"
+			}
+		],
+		"chiffreDaffaires": [
+			{
+				"annee": 2008,
+				"valeur": 16.49
+			},
+			{
+				"annee": 2012,
+				"valeur": 37.97
+			},
+			{
+				"annee": 2016,
+				"valeur": 89.46
+			},
+			{
+				"annee": 2018,
+				"valeur": 136.2
+			}
+		]
+	},
+	{
+		"nom": "Amazon",
+		"siegeSocial": [
+			"Seattle,",
+			"Washington",
+			"United-Stated"
+		],
+		"fondateur": [
+			{
+				"nom": "Jeff Bezos",
+				"date_naissance": "12/01/1964",
+				"lieu": "Albuquerque",
+				"pays": "Nouveau-Mexique"
+			}
+		],
+		"chiffreDaffaires": [
+			{
+				"annee": 2010,
+				"valeur": 34.2
+			},
+			{
+				"annee": 2012,
+				"valeur": 61.1
+			},
+			{
+				"annee": 2016,
+				"valeur": 136
+			},
+			{
+				"annee": 2018,
+				"valeur": 235.9
+			}
+		]
+	}
+]

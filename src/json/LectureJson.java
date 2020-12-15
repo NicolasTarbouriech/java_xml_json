@@ -16,11 +16,11 @@ public class LectureJson {
 		ObjectMapper mapper = new ObjectMapper();
 
 		CollectionType collType = mapper.getTypeFactory().constructCollectionType(List.class, Societe.class);
-		List<Societe> persons = mapper.readValue(new File("C:/Users/tarbo/Desktop/jsontest.txt"), collType);
+		List<Societe> persons = mapper.readValue(new File("C:\\Users\\tarbo\\Desktop\\Workspace Spring\\java_xml_json\\jsontest.json"), collType);
 
 		for (Societe p : persons) {
 			System.out.println("L'entreprise que l'on va voir est : " + p.getNom());
-			System.out.println("");
+		
 			System.out.println("le siege social est : " + p.getSiegeSocial());
 			System.out.println("");
 			for (Fondateur f : p.getFondateur()) {
